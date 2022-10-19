@@ -20,9 +20,9 @@ include('header.php');
   <tbody>
     <?php
 $servername = "localhost";
-$username = "oaowenou_homework3";
+$username = "oaowenou_hw4ecomm";
 $password = "TAnner01!!";
-$dbname = "oaowenou_hw3ecomm";
+$dbname = "oaowenou_hw4ecomm";
 
 
 // Create connection
@@ -32,7 +32,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT Instructor_id, Instructor_name from Instructor";
+$sql = "SELECT * from Dogs";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -40,8 +40,8 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>
   <tr>
-    <td><?=$row["Instructor_id"]?></td>
-    <td><?=$row["Instructor_name"]?></td>
+    <td><?=$row["DID"]?></td>
+    <td><?=$row["DName"]?></td>
   </tr>
 <?php
   }
@@ -52,8 +52,8 @@ $conn->close();
 ?>
   </tbody>
     </table>
-    <h1>Welcome to Owen University!</h1>
-   <h2>See our professors!</h2>
+    <h1>See our dog friends!</h1>
+  
     
     
   
