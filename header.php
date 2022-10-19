@@ -6,7 +6,7 @@
     <title>HW3 Owen</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   </head>
-    <body style="background-image: url('https://cdn.britannica.com/85/13085-050-C2E88389/Corpus-Christi-College-University-of-Cambridge-England.jpg');">
+    <body style="background-image: url('https://d.newsweek.com/en/full/1979380/dog-running-through-autumn-leaves.webp?w=466&h=311&f=d724190ecb5582e8a86d87dcc25351a1');">
  <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.php">University of Owen</a>
