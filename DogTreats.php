@@ -52,7 +52,7 @@ $conn->close();
 ?>
   </tbody>
     </table>
-    <h1> Yummy treats!</h1>
+    <h1>yay for treats!</h1>
   
     
     
