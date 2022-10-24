@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
     
       <h1>Dogs</h1>
-      <table class="table table-striped">
+      <table class="table table-dark table-hover">
         <thead>
           <tr>
             <th>DID</th>
