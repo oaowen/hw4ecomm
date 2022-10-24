@@ -9,7 +9,7 @@
     <body style="background-image: url('https://cdn.vox-cdn.com/thumbor/q9Xm_9GspgADOQpPsIMfg5QWfN8=/0x0:1200x675/1200x675/filters:focal(504x242:696x434)/cdn.vox-cdn.com/uploads/chorus_image/image/67224712/pop_culter_dog_rank_alyceatinoyan_feature.0.jpg');">
  <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.php">University of Owen</a>
+    <a class="navbar-brand" href="index.php">Dogs!!</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
