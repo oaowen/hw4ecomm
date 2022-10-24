@@ -42,7 +42,7 @@ if ($result->num_rows > 0) {
 ?>
   <tr class="p-3 mb-2 bg-primary text-white">
     <td><?=$row["OID"]?></td>
-    <td><?=$row["OName"]?></td>
+    <td><?=$row["OFName"]?></td>
     td><?=$row["OLName"]?></td>
   </tr>
 <?php
