@@ -14,8 +14,8 @@ include('header.php');
   <thead>
     <tr>
       <th>ID</th>
-      <th>First Name</th>
-      <th>Last Name</th>
+      <th>FirstName</th>
+      <th>LastName</th>
     </tr>
   </thead>
   <tbody>
