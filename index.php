@@ -77,7 +77,7 @@ if ($result->num_rows > 0) {
             <td><?=$row["DID"]?></td>
             <td><a href="DogsSection.php?id=<?=$row["DID"]?>"><?=$row["DName"]?></a></td>
             <td>
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editDog<?=$row["DID"]?>">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editDogs<?=$row["DID"]?>">
                 Edit
               </button>
               <div class="modal fade" id="editDogs<?=$row["DID"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editDogs<?=$row["DID"]?>Label" aria-hidden="true">
