@@ -17,7 +17,7 @@
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         <a class="nav-link" href="DogBreed.php">Dog Breeds</a>
-        <a class="nav-link" href="sections.php">Section</a>
+        <a class="nav-link" href="DogTreats.php.php">Treats</a>
         <a class="nav-link" href="instructor-cards.php">Instructor Cards</a>
    
         
