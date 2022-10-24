@@ -91,10 +91,10 @@ if ($result->num_rows > 0) {
                       <form method="post" action="">
                         <div class="mb-3">
                           <label for="editDogs<?=$row["DID"]?>Name" class="form-label">Name</label>
-                          <input type="text" class="form-control" id="editDogs<?=$row["DID"]?>Name" aria-describedby="editDogs<?=$row["DID"]?>Help" name="iName" value="<?=$row['DName']?>">
+                          <input type="text" class="form-control" id="editDogs<?=$row["DID"]?>Name" aria-describedby="editDogs<?=$row["DID"]?>Help" name="iName" value="<?=$row["DName"]?>">
                           <div id="editDogs<?=$row["DID"]?>Help" class="form-text">Enter the Dog's name.</div>
                         </div>
-                        <input type="hidden" name="iid" value="<?=$row['DID']?>">
+                        <input type="hidden" name="iid" value="<?=$row["DID"]?>">
                         <input type="hidden" name="saveType" value="Edit">
                         <input type="submit" class="btn btn-primary" value="Submit">
                       </form>
