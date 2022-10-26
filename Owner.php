@@ -80,7 +80,7 @@ if ($result->num_rows > 0) {
               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editOwner<?=$row["OID"]?>">
                 Edit
               </button>
-              <div class="modal fade" id="editOwner<?=$row["OID"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editDogs<?=$row["OID"]?>Label" aria-hidden="true">
+              <div class="modal fade" id="editOwner<?=$row["OID"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editOwner<?=$row["OID"]?>Label" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
