@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
     
-      <h1>Dog Breeds</h1>
+      <h1>Dogs breed</h1>
       <table class="table table-success table-striped-columns">
         <thead>
           <tr>
@@ -84,7 +84,7 @@ if ($result->num_rows > 0) {
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="editDogBreed<?=$row["DBID"]?>Label">Edit Dog BReed</h1>
+                      <h1 class="modal-title fs-5" id="editDogBreed<?=$row["DBID"]?>Label">Edit Dogs Breed</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -92,7 +92,7 @@ if ($result->num_rows > 0) {
                         <div class="mb-3">
                           <label for="editDogBreed<?=$row["DBID"]?>Name" class="form-label">Name</label>
                           <input type="text" class="form-control" id="editDogBreed<?=$row["DBID"]?>Name" aria-describedby="editDogBreed<?=$row["DBID"]?>Help" name="iName" value="<?=$row["DBName"]?>">
-                          <div id="editDogBreed<?=$row["DBID"]?>Help" class="form-text">Enter the name.</div>
+                          <div id="editDogBreed<?=$row["DBID"]?>Help" class="form-text">Enter the breed's name.</div>
                         </div>
                         <input type="hidden" name="iid" value="<?=$row["DBID"]?>">
                         <input type="hidden" name="saveType" value="Edit">
@@ -124,24 +124,24 @@ $conn->close();
       </table>
       <br />
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#DogBreed">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addDogBreed">
         Add New
       </button>
 
       <!-- Modal -->
-      <div class="modal fade" id="addDogBreed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addDogBreedLabel" aria-hidden="true">
+      <div class="modal fade" id="addDogBreed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addDogBreed" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="addDogBreed">Add Dog Breed</h1>
+              <h1 class="modal-title fs-5" id="addDogBreed">Add treats</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <form method="post" action="">
                 <div class="mb-3">
                   <label for="DBName" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="DBName" aria-describedby="nameHelp" name="iName">
-                  <div id="nameHelp" class="form-text">Enter the name.</div>
+                  <input type="text" class="form-control" id="DogBreedName" aria-describedby="nameHelp" name="iName">
+                  <div id="nameHelp" class="form-text">Enter the breed's name.</div>
                 </div>
                 <input type="hidden" name="saveType" value="Add">
                 <button type="submit" class="btn btn-primary">Submit</button>
