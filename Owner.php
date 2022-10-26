@@ -75,26 +75,26 @@ if ($result->num_rows > 0) {
           
           <tr>
             <td><?=$row["OID"]?></td>
-            <td><a href="DogsSection.php?id=<?=$row["DID"]?>"><?=$row["DName"]?></a></td>
+            <td><a href="OwnerSection.php?id=<?=$row["OID"]?>"><?=$row["OFName"]?></a></td>
             <td>
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editDogs<?=$row["DID"]?>">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editOwner<?=$row["OID"]?>">
                 Edit
               </button>
-              <div class="modal fade" id="editDogs<?=$row["DID"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editDogs<?=$row["DID"]?>Label" aria-hidden="true">
+              <div class="modal fade" id="editOwner<?=$row["DID"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editDogs<?=$row["OID"]?>Label" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="editDogs<?=$row["DID"]?>Label">Edit Dogs</h1>
+                      <h1 class="modal-title fs-5" id="editOwner<?=$row["OID"]?>Label">Edit Owner</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <form method="post" action="">
                         <div class="mb-3">
-                          <label for="editDogs<?=$row["DID"]?>Name" class="form-label">Name</label>
-                          <input type="text" class="form-control" id="editDogs<?=$row["DID"]?>Name" aria-describedby="editDogs<?=$row["DID"]?>Help" name="iName" value="<?=$row["DName"]?>">
-                          <div id="editDogs<?=$row["DID"]?>Help" class="form-text">Enter the Dog's name.</div>
+                          <label for="editOwner<?=$row["OID"]?>Name" class="form-label">Name</label>
+                          <input type="text" class="form-control" id="editOwner<?=$row["OID"]?>Name" aria-describedby="editOwner<?=$row["OID"]?>Help" name="iName" value="<?=$row["OFName"]?>">
+                          <div id="editOwner<?=$row["OID"]?>Help" class="form-text">Enter the Owner's name.</div>
                         </div>
-                        <input type="hidden" name="iid" value="<?=$row["DID"]?>">
+                        <input type="hidden" name="iid" value="<?=$row["OID"]?>">
                         <input type="hidden" name="saveType" value="Edit">
                         <input type="submit" class="btn btn-primary" value="Submit">
                       </form>
@@ -105,7 +105,7 @@ if ($result->num_rows > 0) {
             </td>
             <td>
               <form method="post" action="">
-                <input type="hidden" name="iid" value="<?=$row["DID"]?>" />
+                <input type="hidden" name="iid" value="<?=$row["OID"]?>" />
                 <input type="hidden" name="saveType" value="Delete">
                 <input type="submit" class="btn" onclick="return confirm('Are you sure?')" value="Delete">
               </form>
@@ -124,24 +124,24 @@ $conn->close();
       </table>
       <br />
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addDogs">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOwner">
         Add New
       </button>
 
       <!-- Modal -->
-      <div class="modal fade" id="addDogs" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addDogsLabel" aria-hidden="true">
+      <div class="modal fade" id="addOwner" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addOwnerLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="addDogsLabel">Add Dogs</h1>
+              <h1 class="modal-title fs-5" id="addOwnerLabel">Add Owner</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <form method="post" action="">
                 <div class="mb-3">
-                  <label for="DName" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="DogsName" aria-describedby="nameHelp" name="iName">
-                  <div id="nameHelp" class="form-text">Enter the Dog's name.</div>
+                  <label for="OFName" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="OwnerName" aria-describedby="nameHelp" name="iName">
+                  <div id="nameHelp" class="form-text">Enter the Owner's name.</div>
                 </div>
                 <input type="hidden" name="saveType" value="Add">
                 <button type="submit" class="btn btn-primary">Submit</button>
